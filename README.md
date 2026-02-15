@@ -24,6 +24,37 @@ cat-facts-website/ │ ├── index.html      # Main HTML file ├── styl
 ## 🚀 Getting Started
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/cat-facts-website.git
+   git clone https://mohdali644.github.io/Whisker-verse/
+2. Open the project folder:
+cd cat-facts-website
+3. Run the site:
+- Open index.html in your browser.
+- Or use a local server (e.g., VS Code Live Server).
+
+---
+
+🛠️ Technologies Used
+- HTML5 for structure
+- CSS3 for styling and animations
+- JavaScript (ES6) for interactivity
+- Cat Facts API for dynamic content
+
+---
+
+🤝 Contributing
+Contributions are welcome!
+- Fork the repo
+- Create a new branch (feature/new-section)
+- Commit changes
+- Open a Pull Request
+
+
+
+
+
+
+
+
+
 
 
