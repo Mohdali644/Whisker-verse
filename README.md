@@ -4,6 +4,8 @@ Built with **HTML, CSS, and JavaScript**, featuring API integration, responsive 
 
 ---
 
+🖼️  Live Demo https://mohdali644.github.io/Whisker-verse/
+
 ## ✨ Features
 - **Random Cat Facts**: Fetches live facts from [Cat Facts API](https://catfact.ninja/fact).
 - **Interactive Quiz**: Multiple-choice questions to test your feline knowledge.
@@ -14,3 +16,14 @@ Built with **HTML, CSS, and JavaScript**, featuring API integration, responsive 
 ---
 
 ## 📂 Project Structure
+
+cat-facts-website/ │ ├── index.html      # Main HTML file ├── style.css       # Styling and animations ├── script.js       # Logic for API fetch + quiz └── README.md       # Project documentation
+
+---
+
+## 🚀 Getting Started
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/cat-facts-website.git
+
+
