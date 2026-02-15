@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PinkPaws Universe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Floating Paws -->
+<div class="paws">
+  <span>🐾</span>
+  <span>🐾</span>
+  <span>🐾</span>
+  <span>🐾</span>
+  <span>🐾</span>
+</div>
+
+<nav>
+  <h1>Whiskerverse</h1>
+  <div>
+    <button id="themeToggle">🌙</button>
+  </div>
+</nav>
+
+<section class="hero">
+  <h2 class="animate">Discover Magical Cat Facts 😻</h2>
+  <p class="animate">Click below and enter the world of fluffy knowledge.</p>
+  <button id="generateBtn">🐱 Show Me A Fact</button>
+</section>
+
+<section class="fact-section">
+  <div id="factCard" class="fact-card hidden">
+    <img id="catImage" src="" alt="Cat">
+    <p id="factText"></p>
+    <div class="card-buttons">
+      <button id="saveBtn">💖 Save</button>
+      <button id="meowBtn">🔊 Meow</button>
+    </div>
+  </div>
+</section>
+
+<section class="history-section">
+  <h2>📜 Saved Cat Facts</h2>
+  <div id="savedFacts" class="saved-container"></div>
+</section>
+
+<footer>
+  Made with 💕 by Cat Lovers
+</footer>
+
+<audio id="meowSound" src="https://www.fesliyanstudios.com/play-mp3/387"></audio>
+
+<script src="app.js"></script>
+</body>
+</html>
