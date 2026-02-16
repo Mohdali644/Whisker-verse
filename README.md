@@ -25,8 +25,10 @@ cat-facts-website/ │ ├── index.html      # Main HTML file ├── styl
 1. Clone the repository:
    ```bash
    git clone https://mohdali644.github.io/Whisker-verse/
+   
 2. Open the project folder:
 cd cat-facts-website
+
 3. Run the site:
 - Open index.html in your browser.
 - Or use a local server (e.g., VS Code Live Server).
