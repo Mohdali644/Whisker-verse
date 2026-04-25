@@ -1,4 +1,4 @@
-# WhiskerWorld 🐾
+# Whiskerverse 🐾
 A modern, animated website that shares random cat facts and includes a fun interactive quiz.  
 Built with **HTML, CSS, and JavaScript**, featuring API integration, responsive design, and smooth animations.
 
@@ -17,8 +17,13 @@ Built with **HTML, CSS, and JavaScript**, featuring API integration, responsive 
 
 ## 📂 Project Structure
 
-cat-facts-website/ │ ├── index.html      # Main HTML file ├── style.css       # Styling and animations ├── script.js       # Logic for API fetch + quiz └── README.md       # Project documentation
-
+```cat-facts-website/
+│ 
+├── index.html      # Main HTML file 
+├── style.css       # Styling and animations
+├── script.js       # Logic for API fetch + quiz
+└── README.md       # Project documentation
+```
 ---
 
 ## 🚀 Getting Started
