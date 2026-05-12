@@ -1,4 +1,4 @@
-# WhiskerWorld 🐾
+# Whiskerverse 🐾
 A modern, animated website that shares random cat facts and includes a fun interactive quiz.  
 Built with **HTML, CSS, and JavaScript**, featuring API integration, responsive design, and smooth animations.
 
@@ -17,18 +17,24 @@ Built with **HTML, CSS, and JavaScript**, featuring API integration, responsive 
 
 ## 📂 Project Structure
 
-cat-facts-website/ │ ├── index.html      # Main HTML file ├── style.css       # Styling and animations ├── script.js       # Logic for API fetch + quiz └── README.md       # Project documentation
-
+```cat-facts-website/
+│ 
+├── index.html      # Main HTML file 
+├── style.css       # Styling and animations
+├── script.js       # Logic for API fetch + quiz
+└── README.md       # Project documentation
+```
 ---
 
 ## 🚀 Getting Started
 1. Clone the repository:
-   ```bash
-   git clone https://mohdali644.github.io/Whisker-verse/
-   
+```
+  git clone https://mohdali644.github.io/Whisker-verse/
+``` 
 2. Open the project folder:
-cd cat-facts-website
-
+```
+  cd cat-facts-website
+```
 3. Run the site:
 - Open index.html in your browser.
 - Or use a local server (e.g., VS Code Live Server).
