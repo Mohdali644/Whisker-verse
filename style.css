@@ -45,8 +45,24 @@ nav {
 }
 
 .hero p {
-  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #d00ee6;
+  color: white;
+
+  height: 40px;
+  width: 445px;
+  margin-left: 515px;
+  text-align: center;
+
+  border-radius: 20px;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+
 
 button {
   padding: 12px 25px;
