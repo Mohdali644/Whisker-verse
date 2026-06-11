@@ -2,56 +2,272 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>PinkPaws Universe</title>
+  <title>Whiskerverse | The Ultimate Feline Hub</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700;900&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark">
 
-<!-- Floating Paws -->
-<div class="paws">
-  <span>🐾</span>
-  <span>🐾</span>
-  <span>🐾</span>
-  <span>🐾</span>
-  <span>🐾</span>
-</div>
-
-<nav>
-  <h1>Whiskerverse</h1>
-  <div>
-    <button id="themeToggle">🌙</button>
+  <div id="ultra-loader" class="ultra-loader">
+      <i class="fas fa-cat loader-cat"></i>
+      <div class="loader-progress"></div>
   </div>
-</nav>
 
-<section class="hero">
-  <h2 class="animate">Discover Magical Cat Facts 😻</h2>
-  <p class="animate">Click below and enter the world of fluffy knowledge.</p>
-  <button id="generateBtn">🐱 Show Me A Fact</button>
-</section>
+  <div id="toastContainer" class="toast-container"></div>
 
-<section class="fact-section">
-  <div id="factCard" class="fact-card hidden">
-    <img id="catImage" src="" alt="Cat">
-    <p id="factText"></p>
-    <div class="card-buttons">
-      <button id="saveBtn">💖 Save</button>
-      <button id="meowBtn">🔊 Meow</button>
+  <div class="mesh-bg"></div>
+  <div class="stars-overlay"></div>
+  
+  <div class="paws" aria-hidden="true">
+    <span>🐾</span><span>🐾</span><span>🐾</span><span>🐾</span><span>🐾</span>
+  </div>
+
+  <nav class="ultra-nav">
+    <div class="logo">
+      <i class="fas fa-cat glow-icon"></i> Whisker<span class="highlight">verse</span>
     </div>
+    
+    <label class="ultra-theme-switch">
+        <input type="checkbox" id="themeToggle" checked>
+        <span class="theme-slider">
+            <i class="fas fa-sun sun-icon"></i>
+            <i class="fas fa-moon moon-icon"></i>
+        </span>
+    </label>
+  </nav>
+
+  <header class="hero scroll-reveal">
+    <div class="glow-orb"></div>
+    <h1 class="animate-gradient">Discover Magical Feline Facts</h1>
+    <p class="subtitle glass-pill">Enter the world of fluffy knowledge and test your IQ.</p>
+    <div class="hero-actions">
+      <button id="generateBtn" class="ultra-btn primary-btn"><i class="fas fa-paw"></i> Reveal A Fact</button>
+      <a href="#quiz-section" class="ultra-btn outline-btn"><i class="fas fa-bolt"></i> Take the Quiz</a>
+    </div>
+  </header>
+
+  <section class="fact-section scroll-reveal" id="fact-section">
+    <div id="factCard" class="glass-card hidden">
+      <div class="image-wrapper">
+        <div class="loader"></div>
+        <img id="catImage" src="" alt="Random Cat" onload="this.previousElementSibling.style.display='none'">
+      </div>
+      <div class="fact-content">
+        <p id="factText" class="fact-text"></p>
+        
+        <div class="card-actions-grid">
+          <button id="saveBtn" class="action-btn"><i class="fas fa-heart"></i> Save</button>
+          <button id="copyBtn" class="action-btn"><i class="fas fa-copy"></i> Copy</button>
+          <button id="speakBtn" class="action-btn"><i class="fas fa-comment-dots"></i> Speak</button>
+          <button id="meowBtn" class="action-btn"><i class="fas fa-volume-up"></i> Meow</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quiz-section scroll-reveal" id="quiz-section">
+    <div class="glass-card quiz-card">
+      <div class="quiz-header">
+        <h2><i class="fas fa-crown highlight"></i> The Ultimate Feline IQ Test</h2>
+        <div class="progress-bar"><div class="progress" id="quizProgress"></div></div>
+      </div>
+      
+      <div id="quizIntro">
+        <p>Questions change every time. Think you know cats? Prove it.</p>
+        <button id="startQuizBtn" class="ultra-btn primary-btn pulse-anim">Start Challenge</button>
+      </div>
+
+      <div id="quizEngine" class="hidden">
+        <h3 id="questionText" class="question-text">Question goes here?</h3>
+        <div id="optionsGrid" class="options-grid"></div>
+      </div>
+
+      <div id="quizResults" class="hidden text-center" style="position: relative;">
+        <h3 class="animate-gradient giant-text">Quiz Complete!</h3>
+        <p id="scoreText" class="score-text">You scored X out of Y.</p>
+        <button id="restartQuizBtn" class="ultra-btn outline-btn" style="margin-top: 20px;">Reroll Questions</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEAST FEATURE: Holographic Persona Matrix -->
+  <section class="persona-section scroll-reveal" id="persona-matrix">
+    <div class="glass-card text-center" style="max-width: 800px; margin: 0 auto 60px auto;">
+      <h2><i class="fas fa-fingerprint highlight"></i> Feline Persona Matrix</h2>
+      <p style="margin-bottom: 25px;">Input your human name to generate your Quantum Cat Identity.</p>
+      
+      <div style="display: flex; gap: 10px; justify-content: center; margin-bottom: 30px;">
+          <input type="text" id="humanNameInput" placeholder="Enter your name..." style="padding: 15px 25px; border-radius: 50px; border: 1px solid var(--card-border); background: rgba(0,0,0,0.2); color: var(--text-main); font-family: 'Outfit'; font-size: 1.1rem; width: 60%; outline: none;">
+          <button id="generatePersonaBtn" class="ultra-btn primary-btn"><i class="fas fa-dna"></i> Generate</button>
+      </div>
+
+      <!-- The Holographic ID Card (Hidden by default) -->
+      <div id="hologramCard" class="hologram-card hidden">
+          <div class="holo-header">CLASSIFIED FELINE IDENTITY</div>
+          <div class="holo-body">
+              <div class="holo-avatar"><i class="fas fa-cat"></i></div>
+              <div class="holo-stats" style="text-align: left;">
+                  <p><strong>Name:</strong> <span id="holoName" class="highlight"></span></p>
+                  <p><strong>Breed:</strong> <span id="holoBreed"></span></p>
+                  <p><strong>Trait:</strong> <span id="holoTrait"></span></p>
+                  <p><strong>Superpower:</strong> <span id="holoPower"></span></p>
+              </div>
+          </div>
+          <div class="holo-glare"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="excuse-section scroll-reveal" id="excuse-generator">
+    <div class="glass-card text-center" style="max-width: 700px; margin: 0 auto 60px auto;">
+      <h2><i class="fas fa-comment-slash highlight"></i> The Feline Excuse Engine</h2>
+      <p style="margin-bottom: 25px;">Need to cancel plans? Let Feline Law handle it.</p>
+      
+      <div style="display: flex; gap: 10px; justify-content: center; margin-bottom: 20px;">
+          <select id="excuseContext" style="padding: 12px 20px; border-radius: 50px; border: 1px solid var(--card-border); background: rgba(0,0,0,0.2); color: var(--text-main); font-family: 'Outfit'; font-size: 1rem; outline: none; cursor: pointer;">
+              <option value="work" style="color: black;">Work / Meeting</option>
+              <option value="social" style="color: black;">Social / Party</option>
+              <option value="dating" style="color: black;">Dating / Romace</option>
+          </select>
+          <button id="generateExcuseBtn" class="ultra-btn primary-btn"><i class="fas fa-bolt"></i> Generate</button>
+      </div>
+
+      <div class="excuse-display" style="background: rgba(0,0,0,0.15); padding: 25px; border-radius: 15px; border-left: 4px solid var(--primary); text-align: left; position: relative; min-height: 100px; display: flex; align-items: center;">
+          <p id="excuseText" style="font-size: 1.2rem; font-style: italic; margin-right: 40px; line-height: 1.5;">Select a category and generate an excuse...</p>
+          <button id="copyExcuseBtn" class="icon-btn" style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%);" title="Copy to Clipboard">
+              <i class="fas fa-copy"></i>
+          </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="focus-section scroll-reveal" id="purrmodoro">
+    <div class="glass-card text-center" style="max-width: 500px; margin: 0 auto 60px auto;">
+      <h2><i class="fas fa-clock highlight"></i> Purr-modoro Focus</h2>
+      <p style="margin-bottom: 20px;">25 minutes of deep work. Do NOT switch tabs.</p>
+      
+      <div class="timer-display" style="font-size: 5rem; font-family: 'Space Grotesk', sans-serif; font-weight: 900; letter-spacing: 5px; color: var(--primary); text-shadow: 0 0 20px var(--primary-glow); margin: 20px 0;">
+          <span id="timerMinutes">25</span>:<span id="timerSeconds">00</span>
+      </div>
+
+      <div id="focusCatDisplay" style="font-size: 4rem; margin-bottom: 20px; transition: transform 0.3s ease;">
+          🐈
+      </div>
+      
+      <button id="toggleTimerBtn" class="ultra-btn outline-btn pulse-anim">
+        <i class="fas fa-play"></i> Start Focus
+      </button>
+    </div>
+  </section>
+
+  <section class="genetics-section scroll-reveal" id="genetics-lab">
+    <div class="glass-card" style="max-width: 800px; margin: 0 auto 60px auto;">
+      <h2 class="text-center"><i class="fas fa-dna highlight"></i> Genetics Laboratory</h2>
+      <p class="text-center" style="margin-bottom: 30px;">Adjust the genetic sequences below to engineer specific feline breeds.</p>
+      
+      <div class="genetics-grid">
+        <div class="slider-container">
+            <div class="slider-header">
+                <label>Coat Length</label>
+                <span id="coatVal" class="val-badge">50%</span>
+            </div>
+            <input type="range" id="coatSlider" min="0" max="100" value="50" class="dna-slider">
+            <div class="slider-labels"><span>Hairless</span><span>Fluffy</span></div>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider-header">
+                <label>Melanin (Color)</label>
+                <span id="melaninVal" class="val-badge">50%</span>
+            </div>
+            <input type="range" id="melaninSlider" min="0" max="100" value="50" class="dna-slider">
+            <div class="slider-labels"><span>Light / Pointed</span><span>Dark / Solid</span></div>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider-header">
+                <label>Ear Cartilage</label>
+                <span id="earVal" class="val-badge">0%</span>
+            </div>
+            <input type="range" id="earSlider" min="0" max="100" value="0" class="dna-slider">
+            <div class="slider-labels"><span>Straight</span><span>Folded Mutation</span></div>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider-header">
+                <label>Vocalization</label>
+                <span id="vocalVal" class="val-badge">50%</span>
+            </div>
+            <input type="range" id="vocalSlider" min="0" max="100" value="50" class="dna-slider">
+            <div class="slider-labels"><span>Quiet / Reserved</span><span>Loud / Demanding</span></div>
+        </div>
+      </div>
+
+      <div class="genetics-result">
+          <p>Engineered Breed Match:</p>
+          <div id="breedResult" class="breed-match animate-gradient">Domestic Shorthair</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="history-section scroll-reveal" id="vault">
+    <h2><i class="fas fa-archive"></i> The Knowledge Vault</h2>
+    <div id="savedFacts" class="saved-grid"></div>
+  </section>
+
+  <canvas id="yarnCanvas"></canvas>
+
+  <section class="quantum-section scroll-reveal" id="schrodinger">
+    <div class="glass-card text-center" style="max-width: 600px; margin: 0 auto 60px auto; overflow: visible;">
+      <h2><i class="fas fa-box-open highlight"></i> The Quantum Paradox</h2>
+      <p style="margin-bottom: 50px;">Is the cat alive? Is it cosmic? Click the box to collapse the waveform.</p>
+      
+      <div class="scene">
+        <div class="cube" id="quantumCube">
+          <div class="cube__face cube__face--front">?</div>
+          <div class="cube__face cube__face--back"></div>
+          <div class="cube__face cube__face--right"></div>
+          <div class="cube__face cube__face--left"></div>
+          <div class="cube__face cube__face--top" id="cubeTop"></div>
+          <div class="cube__face cube__face--bottom"></div>
+          
+          <div class="cube__inside" id="cubeSecret"></div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <canvas id="cosmicStarMap" class="hidden-canvas"></canvas>
+
+  <section class="theremin-section scroll-reveal" id="theremin">
+    <div class="glass-card text-center" style="max-width: 800px; margin: 0 auto 60px auto;">
+      <h2><i class="fas fa-wave-square highlight"></i> Feline Theremin Synthesizer</h2>
+      <p style="margin-bottom: 20px;">Turn on your sound. Move your mouse inside the box to generate cosmic meow-waves.</p>
+      
+      <div id="thereminPad" class="theremin-pad">
+          <div id="thereminNode" class="theremin-node"><i class="fas fa-music"></i></div>
+          <span class="theremin-instruction">Click & Drag Here</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="god-tier-controls text-center" style="margin: 80px 0;">
+      <h3 style="margin-bottom: 20px; font-family: 'Space Grotesk';">Experimental God-Tier Controls</h3>
+      <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+          <button id="pipCompanionBtn" class="ultra-btn primary-btn"><i class="fas fa-external-link-alt"></i> Summon Desktop Companion</button>
+          <button id="toggleStarMapBtn" class="ultra-btn outline-btn"><i class="fas fa-meteor"></i> Engage Cosmic Star Map</button>
+          <button id="gravityCataclysmBtn" class="ultra-btn outline-btn" style="border-color: #ef4444; color: #ef4444;"><i class="fas fa-bomb"></i> Gravity Cataclysm</button>
+      </div>
   </div>
-</section>
 
-<section class="history-section">
-  <h2>📜 Saved Cat Facts</h2>
-  <div id="savedFacts" class="saved-container"></div>
-</section>
+  <footer class="ultra-footer">
+    <p>Engineered with <i class="fas fa-heart highlight"></i> for Cat Lovers Worldwide</p>
+  </footer>
 
-<footer>
-  Made with 💕 for Cat Lovers
-</footer>
-
-<audio id="meowSound" src="https://www.fesliyanstudios.com/play-mp3/387"></audio>
-
-<script src="app.js"></script>
+  <audio id="meowSound" src="https://www.fesliyanstudios.com/play-mp3/387" preload="auto"></audio>
+  <script src="app.js"></script>
 </body>
 </html>
