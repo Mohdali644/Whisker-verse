@@ -60,8 +60,8 @@ whiskerverse/
 │   │   └── api.js        # Asynchronous fetch and data handling
 └── README.md             # Project documentation
 ```
-🚀 Getting Started
-Deploying Whiskerverse locally requires zero heavy dependencies. The architecture is built on pure web fundamentals for maximum compatibility and speed.
+## 🚀 Getting Started
+#### Deploying Whiskerverse locally requires zero heavy dependencies. The architecture is built on pure web fundamentals for maximum compatibility and speed.
 
 1. Clone the Repository
 ```Bash
@@ -76,9 +76,9 @@ To fully experience the asynchronous fetch requests and prevent CORS blockages, 
 
 Using VS Code:
 
-Install the Live Server extension.
+* Install the Live Server extension.
 
-Right-click index.html and select "Open with Live Server".
+* Right-click index.html and select "Open with Live Server".
 
 Using Node.js (CLI):
 
