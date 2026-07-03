@@ -314,6 +314,7 @@ body.dark .paws span {
 /* Custom High-Tech Slider */
 .dna-slider {
     -webkit-appearance: none;
+    appearance: none;
     width: 100%;
     height: 8px;
     border-radius: 5px;
