@@ -108,7 +108,7 @@ The platform is designed to evolve into a full-stack application. Upcoming integ
   <p>Information Technology Undergraduate & Aspiring Full Stack Developer 📍 Hyderabad, India</p>
   <a href="#"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
   <a href="#"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/Portfolio-2563EB?style=for-the-badge&logo=globe&logoColor=white" alt="Portfolio"/></a>
+  <a href="https://mohdali644.github.io/Folio/"><img src="https://img.shields.io/badge/Portfolio-2563EB?style=for-the-badge&logo=globe&logoColor=white" alt="Portfolio"/></a>
 </div>
 
 
