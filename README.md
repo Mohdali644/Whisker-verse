@@ -103,7 +103,7 @@ The platform is designed to evolve into a full-stack application. Upcoming integ
 *  Real-Time WebSockets: Adding live chat or real-time notification streams via Socket.io.
 
 ## 👨‍💻 Author
-#### Mohd Ali
+### Mohd Ali ###
 
 Information Technology Undergraduate & Aspiring Full Stack Developer 📍 Hyderabad, India
 
