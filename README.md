@@ -87,7 +87,8 @@ npx http-server -p 3000
 ```
 Navigate to http://localhost:3000 in your browser.
 
-🧠 Development Philosophy
+## 🧠 Development Philosophy
+####
 The Whiskerverse architecture was intentionally built to avoid the bloat of excessive third-party libraries. By engineering custom solutions for routing, state management, and UI animations, this project demonstrates a fundamental mastery of the DOM and the browser rendering engine. This strong foundation ensures that the platform is lightweight, incredibly fast, and infinitely scalable.
 
 🔮 Future Development Roadmap
