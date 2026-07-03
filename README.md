@@ -91,19 +91,19 @@ Navigate to http://localhost:3000 in your browser.
 ####
 The Whiskerverse architecture was intentionally built to avoid the bloat of excessive third-party libraries. By engineering custom solutions for routing, state management, and UI animations, this project demonstrates a fundamental mastery of the DOM and the browser rendering engine. This strong foundation ensures that the platform is lightweight, incredibly fast, and infinitely scalable.
 
-🔮 Future Development Roadmap
+## 🔮 Future Development Roadmap
 The platform is designed to evolve into a full-stack application. Upcoming integration phases include:
 
-[ ] MERN Stack Migration: Porting the vanilla logic into React components for enhanced lifecycle management.
+ * MERN Stack Migration: Porting the vanilla logic into React components for enhanced lifecycle management.
 
-[ ] Backend Database: Connecting to a Node.js/Express server and MongoDB to manage global user data.
+*  Backend Database: Connecting to a Node.js/Express server and MongoDB to manage global user data.
 
-[ ] Authentication Engine: Implementing JWT (JSON Web Tokens) for secure, encrypted user login sessions.
+*  Authentication Engine: Implementing JWT (JSON Web Tokens) for secure, encrypted user login sessions.
 
-[ ] Real-Time WebSockets: Adding live chat or real-time notification streams via Socket.io.
+*  Real-Time WebSockets: Adding live chat or real-time notification streams via Socket.io.
 
-👨‍💻 Author
-Mohd Ali
+## 👨‍💻 Author
+#### Mohd Ali
 
 Information Technology Undergraduate & Aspiring Full Stack Developer 📍 Hyderabad, India
 
