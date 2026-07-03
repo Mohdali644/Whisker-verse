@@ -102,9 +102,13 @@ The platform is designed to evolve into a full-stack application. Upcoming integ
 
 *  Real-Time WebSockets: Adding live chat or real-time notification streams via Socket.io.
 
-## 👨‍💻 Author
-### Mohd Ali 
+  <h2>👨‍💻 Author</h2>
 
-Information Technology Undergraduate & Aspiring Full Stack Developer 📍 Hyderabad, India
+  <h3><b>Mohd Ali</b></h3>
+  <p>Information Technology Undergraduate & Aspiring Full Stack Developer 📍 Hyderabad, India</p>
+  <a href="#"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+  <a href="#"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="#"><img src="https://img.shields.io/badge/Portfolio-2563EB?style=for-the-badge&logo=globe&logoColor=white" alt="Portfolio"/></a>
+</div>
 
-## GitHub • LinkedIn • Portfolio
+
