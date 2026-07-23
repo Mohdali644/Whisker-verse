@@ -589,8 +589,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-
-
     // ==========================================
     // 8. BEAST FEATURE: GENETICS LABORATORY
     // ==========================================
