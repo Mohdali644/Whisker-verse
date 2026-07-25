@@ -103,6 +103,7 @@ h1, h2, h3, .logo { font-family: 'Space Grotesk', sans-serif; }
 
 #quizIntro { display: flex; flex-direction: column; align-items: center; gap: 25px; padding-bottom: 10px; }
 
+
 /* The Sun/Moon Toggle */
 .ultra-theme-switch { position: relative; display: inline-block; width: 64px; height: 32px; }
 .ultra-theme-switch input { opacity: 0; width: 0; height: 0; }
@@ -142,7 +143,7 @@ body.dark .energy-cursor {
 
 
 /* =========================================
-   ULTRA HIGH-LEVEL V2 UPGRADES
+   ULTRA V2 UPGRADES
 ========================================= */
 
 /* 1. Custom Text Selection (Matches your theme) */
