@@ -827,6 +827,7 @@ if (pipCompanionBtn) {
         }
     });
 }
+
 // --- FEATURE D: THE COSMIC STAR MAP (CANVAS) ---
 const toggleStarMapBtn = document.getElementById("toggleStarMapBtn");
 const starCanvas = document.getElementById("cosmicStarMap");
